@@ -33,13 +33,12 @@ Training multiple classification models
 
 Hyperparameter tuning and optimization
 
-📈 Key Outcomes
+🔹 Summary
 
-Identified key features influencing customer churn
-
-Ensemble models demonstrated improved generalization performance
-
-Model comparison enabled selection of the most effective classifier
-
-Robust performance evaluation using multiple metrics
-
+Loaded the trained ANN model and associated pickle files (scaler and encoders).
+Converted new input data into a DataFrame.
+Applied one-hot encoding to the Geography feature and label encoding to the Gender feature.
+Concatenated the encoded features and dropped the original categorical columns.
+Scaled the input features using the saved scaler.
+Predicted the churn probability using the trained model.
+Interpreted the prediction based on a threshold to determine if the customer is likely to churn.
